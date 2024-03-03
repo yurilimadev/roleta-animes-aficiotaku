@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <title>Roleta de Animes - Aficiotaku</title>
+</head>
+<body>
+    <div class="vertical">
+        <h1>Sorteador de Animes - Aficiotaku</h1>
+    
+        <div id="carousel">
+            <figure id="spinner">
+                {% for imagem in imagens['src'] %}
+                    <img src="{{ imagem }}" alt="{{ imagem }}">
+                    <h3>{{ imagens[imagens['src'] == imagem]['nome'].value }}</h3>
+                {% endfor %}
+            </figure>
+            <button onclick="iniciarRoleta()">Iniciar Roleta</button>
+            <button onclick="pararRoleta()">Parar Roleta</button>
+        </div>
+    </div>   
+</body>
+</html>

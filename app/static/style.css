@@ -1,0 +1,70 @@
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/background-anime-leonard-ia.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+}
+.vertical{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#carousel {
+    position: relative;
+    z-index: 1; 
+}
+#spinner img {
+    position: absolute;
+    z-index: 2; 
+    transform: translate(-50%, -50%);
+    width: 100%;
+
+}
+
+
+figure#spinner {
+    height: 450px; /* Ajuste conforme necessário */
+    transform-origin: 50% 50% -500px;
+    transition: 0.5s;
+}
+
+figure#spinner img {
+    width: 100%;
+    max-width: 800px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform-origin: 50% 50% -500px;
+    outline: 1px solid;
+}
+
+
+
+div#carousel ~ span {
+    color: #fff;
+    margin: 5%;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2rem;
+    transition: 0.6s color;
+    position: relative;
+    z-index: 2;
+    margin-top: -6rem;
+    border-bottom: none;
+    line-height: 0;
+}
+
+div#carousel ~ span:hover {
+    color: #888;
+    cursor: pointer;
+}
