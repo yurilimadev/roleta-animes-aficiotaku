@@ -16,6 +16,20 @@ Eu não sou muito fã de design, mas já achei bacana esse layout mais simples, 
 ☑️ Finalizado. Contudo, fiquem a vontade para colaborar :) Mandem uma DM para mim no instagram @aficiotaku 
 # Instruções de Instalação
 <p>Por enquanto, não pensei em um deploy para que vocês possam usar, mas está nos planos.</p>
+
 # Como Usar
 <p>A ideia é carregar um arquivo excel para com os nomes e imagens dos animes que você quer ver e a aplicação vai carregar as imagens de forma aleatória ao clicar no botão de iniciar. E quando você achar que é 
 adequado parar, você pode apertar o botão. E recomeçar quantas vezes você quiser.</p>
+
+# Tecnologias Utilizadas
+
+- Google Colab -> Utilizei uma automação com Selenium para extrair as imagens dos animes no site fillow e produzi um dataframe pandas com as informações para utilizar posteriormente com Flask
+- VsCode -> Utilizei o framework Flask e uma estrutura básica HTML, CSS e JS para finalizar a criação do projeto. 
+
+# Desafios vencidos
+
+<p>Confesso que o maior desafio para mim não é python, mas sim a linguagem para Web e foi bem mais rápido entender a lógica por trás com Chat GPT. Outro problema que surgiu foi a extração das imagens
+com o uso de XPATH e CLASSES das TAGs que continham as imagens, mas achando a classe e TAG corretas foi possível extrair todas as imagens, além disso, outro desafio foi que código selenium não estava
+integrando muito bem com TAG wrapped que são basicamente sanfonadas que abrem só depois de determinadas ações como cliques, mas utilizando a dupla try e except o problema foi contornado. </p>
+
+<p>Ah, caso, você esteja lendo esse README vou adorar conversar sobre a possíbilidade de tornar essa aplicação com uma roleta 3D com Flask. Fica aqui o desafio. 😄</p>
